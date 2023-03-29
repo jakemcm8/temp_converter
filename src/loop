@@ -1,0 +1,13 @@
+loop
+  select input/output units for conversion
+
+  if input is kelvin:
+    if output is celsius:
+    if output is fahrenheit:
+    else please select different output
+  if input is fahrenheit:
+    if output is celsius:
+    if output is kelvin:
+  if input is celsius:
+    if output is kelvin:
+    if ouitput is fahrenheit:
