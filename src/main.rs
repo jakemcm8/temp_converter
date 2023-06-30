@@ -21,12 +21,12 @@ fn main () {
     let mut output_unit = String::new();
     let mut value = String::new();
 
-    println!("Select the initial unit (select a number)   1. Celsius   2. Fahrenheit   3. Kelvin");
+    println!("Select the initial unit (enter the number)   1. Celsius   2. Fahrenheit   3. Kelvin");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut input_unit).unwrap();
     let input_unit = input_unit.trim();
 
-    println!("Select the output unit (select a number)   1. Celsius   2. Fahrenheit   3. Kelvin");
+    println!("Select the output unit (enter the number)   1. Celsius   2. Fahrenheit   3. Kelvin");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut output_unit).unwrap();
     let output_unit = output_unit.trim();
@@ -34,7 +34,7 @@ fn main () {
     println!("Enter the number of degrees you would like to convert");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut value).unwrap();
-    let value = output_unit.trim().parse().unwrap();
+    let value = value.trim().parse().unwrap();
 
     let conversion_function = collections.get(&(input_unit, output_unit));
 
